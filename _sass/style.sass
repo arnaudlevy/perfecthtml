@@ -1,0 +1,11 @@
+#{ schema("Product") }
+    max-width: 400px
+    img
+        max-width: 100%
+    #{ prop("price") }
+        font-size: 30px
+    #{ schema("Offer") }
+        padding: 20px
+        border: black
+        #{ schemaHref("OutOfStock") }
+            background: red
