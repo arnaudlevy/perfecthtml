@@ -1,3 +1,5 @@
 @function schema($name)
-    // TODO return $name instead of product
-  @return "[itemtype=\"https://schema.org/Product\"]"
+  @return "[itemtype=\"https://schema.org/#{$name}\"]"
+
+@function prop($name)
+  @return "[itemprop=\"#{$name}\"]"

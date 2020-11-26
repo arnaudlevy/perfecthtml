@@ -2,11 +2,9 @@
 ---
 @import "schema"
 
-// schema("Product")
-
-[itemtype="https://schema.org/Product"]
+#{ schema("Product") }
     max-width: 400px
     img
         max-width: 100%
-    [itemprop="price"]
+    #{ prop("price") }
         color: red
